@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Nature website</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="email.css">
+        <script src="rotate.js"></script>
+    </head>
+    <body>
+            <header>
+                <img src="naturelogo.gif" >
+            </header>
+            <div class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">e-store</a></li>
+                    <div class="dropdown">
+                            <li>Products and services</li>
+                            <div class="dropdown-content">
+                                <a href="featured.html">featured products</a>
+                                <a href="products.html">Product catalog</a>
+                                <a href="services.html">Services</a>
+                                <a href="supliers.html">Supliers</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                            <li>About us</li>
+                            <div class="dropdown-content">
+                                <a href="aboutus.html">Mission+Vision</a>
+                                <a href="jobs.html">jobs</a>
+                            </div>
+                    </div>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="sitemap.html">site map</a></li>	
+                </div>
+        </div>
+        <div class="content">
+            <div id="centeralign">
+                    <h3>FILL IN THE DETAILS:</h3>
+                    <br />
+                <fieldset>
+                    <form id="emailform" action="" method="post" target="_blank">
+                        <div class="row">
+                            <label for="yourname">Name<span style="color:red">*</span>:</label>
+                            <input type="text" name="username" id="yourname" required autofocus placeholder="Your name"></input>
+                        </div>
+                        <br />
+                        <br />
+                        
+                        <div class="row">
+                            <label for="youremail">Email address<span style="color:red">*</span>:</label>
+                            <input type="email" name="email" id="youremail" required autofocus placeholder="Your email address"></input>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="row">
+                            <label for="yoursubject">Subject<span style="color:red">*</span>:</label>
+                            <input type="text" name="subject" id="yoursubject" required autofocus placeholder="Subject of your email"></input>
+                        </div>
+                        <br />
+                        <br />
+                        
+                        <div class="row">
+                            <label for="emailmessage">Message:</label>
+                            <br />
+                            <textarea id="emailmessage" name="message" placeholder="Your message here" cols="70" rows="15" required ></textarea>
+                        </div>
+                        <br />
+                        <br />
+                        <input id="emailsub" type="submit" value="send mail" onclick="getconfirmation()"></input>
+                        <input id="emailreset" type="reset" value="RESET"></input>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+
+        <div id="footer"> 
+                &copy; Nature's source. All rights reserved!  
+        </div>
+        
+    </body>
+</html>

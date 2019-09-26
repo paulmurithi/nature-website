@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Nature website</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="rotate.js"></script>
+    </head>
+    <body>
+            <header>
+                <img src="naturelogo.gif" >
+            </header>
+            <div class="navbar">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="store.html">e-store</a></li>
+                <div class="dropdown">
+                        <li>Products and services</li>
+                        <div class="dropdown-content">
+                            <a href="featured.html">featured products</a>
+                            <a href="products.html">Product catalog</a>
+                            <a href="services.html">Services</a>
+                            <a href="supliers.html">Supliers</a>
+                        </div>
+                </div>
+                <div class="dropdown">
+                        <li>About us</li>
+                        <div class="dropdown-content">
+                            <a href="aboutus.html">Mission+Vision</a>
+                            <a href="jobs.html">jobs</a>
+                        </div>
+                </div>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="sitemap.html">site map</a></li>	
+            </div>
+        </div>
+        <div class="content">
+            <div id="imageslider">
+                <img src="images/image1.jpg"  class="slideimage"></img>
+                <img src="images/image2.jpg"  class="slideimage"></img>
+                <img src="images/image3.jpg"  class="slideimage"></img>
+                <img src="images/image4.jpg"  class="slideimage"></img>
+                <img src="images/image5.jpg"  class="slideimage"></img>
+                <img src="images/image6.jpg"  class="slideimage"></img>
+                <button class="button" id="lbutton" onclick="plusindex(-1)">&#10094;</button>
+                <button class="button" id="rbutton" onclick="plusindex(-1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div id="footer"> 
+                &copy; Nature's source. All rights reserved!  
+        </div>
+        
+        <script>
+            autochange();
+        </script>
+    </body>
+</html>
